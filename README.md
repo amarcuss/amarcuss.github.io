@@ -1,4 +1,4 @@
 # amarcuss.github.io
-A repository for my GitHub pages. 
+This is a website with pages, links, and other thigns that I finder interesting. 
 
-This is where I'd like to keep links and perhaps short posts on topics that interest me. 
+You can reach this website by following this link [amarcuss.github.io] (http://amarcuss.github.io/)
