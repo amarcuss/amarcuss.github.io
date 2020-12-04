@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.git",
     "\\css",
-    "\\js",
-    "\\Local settings (.vs)"
+    "\\js"
   ],
+  "SelectedNode": "\\books.html",
   "PreviewInSolutionExplorer": false
 }
