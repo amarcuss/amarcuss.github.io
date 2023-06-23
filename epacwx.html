@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewoprt" content="width=device-width, initial-scale=1.0">
     <link href="/css/style.css" rel="stylesheet">
     <title>Eastern Pacific Weather</title>
     <style>
@@ -10,14 +11,35 @@
         { 
             border: 0px;
             vertical-align: top;
+            width: 49%
+        }
+
+        iframe 
+        {
+            width: 49%;
+            height: 400px;
+        }
+
+        @media screen and (max-width: 1000px) 
+        {
+            img 
+            {
+                width: 100%;
+            }
+
+            iframe 
+            {
+                width: 100%;
+                height: 400px;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Eastern Pacific Weather</h1>    
     <p>A subset set of NOAA's amazing resoruces related to Eatern Pacific Tropical Weather. Inspired by <a href="http://eebmike.com">eebmike.com</a>.</p>
-    <iframe src="https://www.nhc.noaa.gov/ftp/pub/forecasts/discussion/MIATWOEP" style="width:700px; height:400px;" title="Tropical Weather Outlook Eastern Pacific"></iframe>
-    <iframe src="https://w1.weather.gov/data/NHC/TWDEP" style="width:700px; height:400px;" title="NHC Eastern Pacific Tropical Weather Discussion"></iframe>
+    <iframe src="https://www.nhc.noaa.gov/ftp/pub/forecasts/discussion/MIATWOEP" title="Tropical Weather Outlook Eastern Pacific"></iframe>
+    <iframe src="https://w1.weather.gov/data/NHC/TWDEP" title="NHC Eastern Pacific Tropical Weather Discussion"></iframe>
     <a href="https://www.nhc.noaa.gov/cyclones/?epac"><img src="https://www.nhc.noaa.gov/xgtwo/two_pac_0d0.png" alt="Eastern Pacific Tropical Cyclones and Distrubances - 48 hours" width=700></a>
     <a href="https://www.nhc.noaa.gov/gtwo.php?basin=epac&fdays=7"><img src="https://www.nhc.noaa.gov/xgtwo/two_pac_7d0.png" alt="Eastern Pacific Seven-Day Graphical Tropical Weather Outlook" width=700></a>
     <a href="https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=eep&band=11&length=24"><img src="https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/eep/11/900x540.jpg" alt="GOES-East - Sector view: Eastern East Pacific - Band 11" width=700></a>
