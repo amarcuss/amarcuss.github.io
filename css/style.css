@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Geologica');
 body {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Geologica', monospace, sans-serif;
 }
 h2 {
     margin: 1px
