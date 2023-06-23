@@ -43,11 +43,16 @@
     <p>A subset set of NOAA's amazing resoruces related to Eastern Pacific Tropical Weather. Inspired by <a href="http://eebmike.com">eebmike.com</a>.</p>
     <script>
         var d = new Date();
-        document.write("<p><b>Current UTC/Z time: " + d.toUTCString("dd-MMM-YYYY HH:MM:SS").replace(" GMT", "") + "</b></p>");
+        document.writeln("<p><b>");
+        document.write("Current local time: " + d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ". ");
+        document.write("Current UTC/Z time: " + d.getUTCDate() + "-" + (d.getUTCMonth() + 1) + "-" + d.getUTCFullYear() + " " + d.getUTCHours() + ":" + d.getUTCMinutes() + ". ");
+        document.write("Local offset is " + (Math.round(d.getTimezoneOffset() / 60)).toFixed(1) + " hours.");
+        document.writeln("</b></p>");
     </script>
     <iframe src="https://www.nhc.noaa.gov/ftp/pub/forecasts/discussion/MIATWOEP" title="Tropical Weather Outlook Eastern Pacific"></iframe>
     <iframe src="https://w1.weather.gov/data/NHC/TWDEP" title="NHC Eastern Pacific Tropical Weather Discussion"></iframe>
-    <a href="https://www.nhc.noaa.gov/cyclones/?epac"><img src="https://www.nhc.noaa.gov/xgtwo/two_pac_0d0.png" alt="Eastern Pacific Tropical Cyclones and Distrubances - 48 hours"></a>
+    <a href="https://www.nhc.noaa.gov/cyclones/?epac"><img src="https://www.nhc.noaa.gov/xgtwo/two_pac_0d0.png" alt="Eastern Pacific Tropical Cyclones and Distrubances - 00 hours"></a>
+    <a href="https://www.nhc.noaa.gov/gtwo.php?basin=epac&fdays=2"><img src="https://www.nhc.noaa.gov/xgtwo/two_pac_2d0.png" alt="Eastern Pacific Tropical Cyclones and Distrubances - 48 hours"></a>
     <a href="https://www.nhc.noaa.gov/gtwo.php?basin=epac&fdays=7"><img src="https://www.nhc.noaa.gov/xgtwo/two_pac_7d0.png" alt="Eastern Pacific Seven-Day Graphical Tropical Weather Outlook"></a>
     <a href="https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=eep&band=11&length=24"><img src="https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/eep/11/900x540.jpg" alt="GOES-East - Sector view: Eastern East Pacific - Band 11"></a>
     <a href="https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=eep&band=GEOCOLOR&length=24"><img src="https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/eep/GEOCOLOR/900x540.jpg" alt="GOES-East - Sector view: Eastern East Pacific - GeoColor"></a>
@@ -55,11 +60,18 @@
     <a href="https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=eep&band=10&length=24"><img src="https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/eep/10/900x540.jpg" alt="GOES-East - Sector view: Eastern East Pacific - Band 10"></a>
     <a href="https://www.ospo.noaa.gov/Products/atmosphere/ascat/ascat_nccf/winds.html"><img class="NO-CACHE" src="https://www.ospo.noaa.gov/Visualization01/cData/Atmosphere/Winds/METOP-C/ASCAT/cur_25km/zooms/WMBas51.png" alt="ASCAT Winds"></a>
     <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/pacsfc24_latestBW.gif" alt="Eastern Pacific Surface Forecast - 24 hours"></a>
+    <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/pacsfc48_latestBW.gif" alt="Eastern Pacific Surface Forecast - 24 hours"></a>
+    <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/pacsfc72_latestBW.gif" alt="Eastern Pacific Surface Forecast - 24 hours"></a>
     <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/EPAC_latest.gif" alt="Eastern North Pacific Tropical Surface Analysis & NWS Unified Surface Analysis"></a>
     <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/USA_latest.gif" alt="Low Resolution Wide Area Tropical Surface Analysis & NWS Unified Surface Analysis"></a>
     <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/pacsea_latestBW.gif" alt="Eastern Pacific Significant Wave Height Analysis"></a>
+    <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/danger_pac_latestBW.gif" alt="Wind Speed Probabilities-Based Tropical Cyclone Danger Graphic (Issued May 15th - Nov 30th)"></a>
+    <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/hiwind_pac_latestBW.gif" alt="High Wind and Associated Seas (Issued Dec 1st - May 14th)"></a>
     <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/pac24_latestBW.gif" alt="Eastern Pacific Wind/Wave Forecasts - 24 hours"></a>
+    <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/pac48_latestBW.gif" alt="Eastern Pacific Wind/Wave Forecasts - 24 hours"></a>
+    <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/pac72_latestBW.gif" alt="Eastern Pacific Wind/Wave Forecasts - 24 hours"></a>
     <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/pac48per_latest.gif" alt="Eastern Pacific Peak Wave Period / Primary Swell Direction"></a>
+    <a href="https://www.nhc.noaa.gov/marine/?epac"><img src="https://www.nhc.noaa.gov/tafb_latest/pac72per_latest.gif" alt="Eastern Pacific Peak Wave Period / Primary Swell Direction"></a>
     <a href="https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html"><img src="https://www.ospo.noaa.gov/data/sst/contour/gulfcalf.fc.gif" alt="Gulf of California Surface Sea Temperature Analysis"></a>
     <a href="https://coralreefwatch.noaa.gov/product/5km/"><img src="https://coralreefwatch.noaa.gov/data_current/5km/v3.1_op/daily/png/ct5km_ssta_v3.1_pacific_current.png" alt="Pacfic Daily Surface Sea Temperature Anomalies"></a>
     <a href="https://coralreefwatch.noaa.gov/product/5km/"><img src="https://coralreefwatch.noaa.gov/data_current/5km/v3.1_op/daily/png/ct5km_baa-max-7d_v3.1_pacific_current.png" alt="NOAA Coral Reef Watch Daily Bleaching Alter 7-day Maximum"></a>
