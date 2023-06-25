@@ -35,12 +35,37 @@
                 width: 100%;
                 height: 200px;
             }
+
+            #layout-button 
+            {
+                display: none;
+            }
         }
     </style>
+    <script>
+        var expanded = false;
+
+        function SwitchVew(){
+            if (expanded == false) {
+                document.styleSheets[1].cssRules[0].style.width = "100%";
+                document.styleSheets[1].cssRules[1].style.width = "100%";
+                document.styleSheets[1].cssRules[1].style.height = "200px";
+                document.getElementById("layout-button").innerHTML = "Two Column Layout";
+                expanded = true;
+            } else {
+                document.styleSheets[1].cssRules[0].style.width = "49%";
+                document.styleSheets[1].cssRules[1].style.width = "49%";
+                document.styleSheets[1].cssRules[1].style.height = "400px";
+                document.getElementById("layout-button").innerHTML = "One Column Layout";
+                expanded = false;
+            }
+        }
+    </script>
 </head>
 <body>
-    <h1>Eastern Pacific Weather</h1>    
-    <p>A subset set of NOAA's amazing resoruces related to Eastern Pacific Tropical Weather. Inspired by <a href="http://eebmike.com">eebmike.com</a>.</p>
+    <h1>Eastern Pacific Weather</h1>
+    <p>A subset set of NOAA's amazing resoruces related to Eastern Pacific Tropical Weather. Inspired by <a href="http://eebmike.com">eebmike.com</a>.
+        <button id="layout-button" onclick="SwitchVew()">One Column Layout</button></p>
     <script>
         var d = new Date();
         document.writeln("<p><b>");
