@@ -8,4 +8,4 @@ Things on top of my mind:
 * Making it editable from everywhere. 
 * Being able to track the full history of the site over time. 
 
-You can reach this website by following this link [amarcuss.github.io] (http://amarcuss.github.io/)
+You can reach this website by following this link [amarcuss.github.io](http://amarcuss.github.io/)
